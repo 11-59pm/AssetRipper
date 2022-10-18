@@ -75,7 +75,7 @@ namespace AssetRipper.IO.Files.SerializedFiles.Parser
 			if (HasSignature(reader.Generation))
 			{
 				string signature = reader.ReadStringZeroTerm();
-				UnityVersion = UnityVersion.Parse(signature);
+				UnityVersion = "2020.3.40f1";
 				reader.Version = UnityVersion;
 			}
 			if (HasPlatform(reader.Generation))
